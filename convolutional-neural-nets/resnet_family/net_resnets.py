@@ -1,11 +1,12 @@
 '''ResNet in PyTorch.
 
-Paper Reference:
+Reference:
 [1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
     Deep Residual Learning for Image Recognition. arXiv:1512.03385
     
-Code Reference:
-[1] https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py
+Repository:
+[1] https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
+[2] https://github.com/kuangliu/pytorch-cifar
 
 '''
 import torch
@@ -120,4 +121,5 @@ def test():
     y = net(torch.randn(1,3,32,32))
     print(y.size())
 
-test()
+if __name__ == "__main__":
+    test()
